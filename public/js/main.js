@@ -2,7 +2,7 @@ $(function() {
 
 	$('.addMeal').on('click', function() {
 
-		$('form').slideToggle();
+		$('form').slideToggle('fast');
 		
 	});
 

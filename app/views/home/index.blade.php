@@ -36,10 +36,9 @@
 		<div class="row">
 			@foreach($meals as $meal)
 				<div class="col-md-12 meal">
-					<h4>{{ $meal->title }}</h4>
 					<p>{{ date('m/d/Y', strtotime($meal->mealDate)) }}</p>
-					<p><strong>Ingredients:</strong></p>
-					<p>{{ $meal->ingredients }}</p>
+					<h4>{{ $meal->title }}</h4>					
+					<p><strong>Ingredients:</strong> {{ $meal->ingredients }}</p>
 					<p><strong>Course:</strong> {{ $meal->course }}</p>
 					<hr/>
 				</div>				

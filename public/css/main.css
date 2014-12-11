@@ -110,6 +110,26 @@ form { display: none; }
 .form-control { border-radius: 0; }
 select { -webkit-appearance: none; }
 
+.datepicker,
+.datepicker th.prev,
+.datepicker th.switch,
+.datepicker th.next,
+.datepicker td.day {
+    border-radius: 0;
+}
+.datepicker td.day.active {
+    background-image: none;
+    background-color: #337ab7;
+}
+.datepicker td.day.active:hover {
+    background: #2e6da4;
+}
+
+.btn:focus, .btn.active:focus {
+    outline: none;
+}
+
+
 
 
 
