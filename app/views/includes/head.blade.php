@@ -15,10 +15,4 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/main.css">
         <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
-        <style>
-            form { display: none; }
-            .btn,
-            .form-control { border-radius: 0; }
-            select { -webkit-appearance: none; }
-        </style>
     </head>

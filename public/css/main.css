@@ -97,7 +97,18 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+header {
+    background: #f8f8f8;
+    padding: 20px;
+    margin: 0 0 25px 0;
+}
+header h3 { margin: 0; }
 
+form { display: none; }
+.btn { outline: none; }
+.btn,
+.form-control { border-radius: 0; }
+select { -webkit-appearance: none; }
 
 
 
