@@ -40,6 +40,7 @@
 					<h4>{{ $meal->title }}</h4>					
 					<p><strong>Ingredients:</strong> {{ $meal->ingredients }}</p>
 					<p><strong>Course:</strong> {{ $meal->course }}</p>
+					<p><strong>Discomfort:</strong> {{ $meal->discomfort }}</p>
 					<hr/>
 				</div>				
 			@endforeach			
