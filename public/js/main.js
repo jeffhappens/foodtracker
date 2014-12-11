@@ -4,6 +4,8 @@ $(function() {
 
 		$('form').slideToggle();
 		
-	})
+	});
+
+	$('.datepicker').datepicker();
 
 })

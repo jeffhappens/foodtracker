@@ -8,7 +8,7 @@
 				{{ Form::open(['role' => 'form']) }}
 				<div class="form-group">
 					<label for="mealDate">Meal Date</label>
-					<input type="text" name="mealDate" class="form-control" placeholder="mm/dd/YYYY" />
+					<input type="text" name="mealDate" class="form-control datepicker" placeholder="mm/dd/YYYY" />
 				</div>
 
 				<div class="form-group">

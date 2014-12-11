@@ -13,6 +13,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/datepicker.css">
         <link rel="stylesheet" href="/css/main.css">
         <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
