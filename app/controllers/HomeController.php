@@ -28,6 +28,7 @@
 			$meal->ingredients = $input['ingredients'];
 			$meal->course = $input['course'];
 			$meal->mealDate = $input['mealDate'];
+			$meal->discomfort = $input['discomfort'];
 			$meal->save();
 			return Redirect::to('/');
 		}

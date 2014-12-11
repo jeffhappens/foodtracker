@@ -1,10 +1,12 @@
 $(function() {
 
 	$('.addMeal').on('click', function() {
-
-		$('form').slideToggle('fast');
-		
+		$('form.add').slideToggle('fast');		
 	});
+	
+	$('.searchButton').on('click', function() {
+		$('.searchForm').slideToggle('fast');
+	})
 
 	$('.datepicker').datepicker();
 

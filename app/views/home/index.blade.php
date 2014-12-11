@@ -4,8 +4,17 @@
 <section>
 	<div class="container">
 		<div class="row">
+			<div class="col-md-12 search">
+				{{ Form::open(['url' => '/search', 'role' => 'form','class' => 'searchForm']) }}
+					<div class="form-group">
+						<label for="query">Search</label>
+						<input type="text" name="query" class="form-control" />
+					</div>
+				{{ Form::close() }}
+			</div>
+
 			<div class="col-md-12">
-				{{ Form::open(['role' => 'form']) }}
+				{{ Form::open(['role' => 'form','class' => 'add']) }}
 				<div class="form-group">
 					<label for="mealDate">Meal Date</label>
 					<input type="text" name="mealDate" class="form-control datepicker" placeholder="mm/dd/YYYY" />
@@ -25,6 +34,15 @@
 						<option value="Breakfast">Breakfast</option>
 						<option value="Lunch">Lunch</option>
 						<option value="Dinner">Dinner</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="discomfort">Discomfort</label>
+					<select name="discomfort" class="form-control">
+						<option value="None">None</option>
+						<option value="Low">Low</option>
+						<option value="Medium">Medium</option>
+						<option value="High">High</option>
 					</select>
 				</div>
 				<div class="form-group">
