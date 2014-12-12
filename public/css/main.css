@@ -129,7 +129,11 @@ select { -webkit-appearance: none; }
     outline: none;
 }
 
+.search input { padding: 20px 10px; font-size: 18px; }
 
+.meal {
+    margin-bottom: 20px;
+}
 
 
 

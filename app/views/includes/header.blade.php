@@ -26,7 +26,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			{{ Form::open(['role' => 'form','class' => 'add']) }}
+			{{ Form::open(['role' => 'form', 'url' => '/', 'class' => 'add']) }}
 			<div class="form-group">
 				<label for="mealDate">Meal Date</label>
 				<input type="text" name="mealDate" class="form-control datepicker" placeholder="mm/dd/YYYY" />
