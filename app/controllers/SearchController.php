@@ -13,5 +13,13 @@
 			return View::Make('search.index', $data);
 		}
 
+		public function searchByDate($month,$day,$year) {
+			$data = [
+				'query' => Meal::where('mealDate',$month.'/'.$day.'/'.$year)->get()
+			];
+			return View::make('search.date', $data);
+
+		}
+
 
 	}
