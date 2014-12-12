@@ -1,12 +1,12 @@
 <header>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<h3>
-					<a href="/">Food Tracker</a>
-					<button class="btn btn-default pull-right searchButton">Search</button>
-					<button class="btn btn-primary pull-right addMeal">New Meal</button>					
-				</h3>
+			<div class="col-md-10">
+				<h3><a href="/">Food Tracker App</a></h3>
+			</div>
+			<div class="col-md-2">
+				<button class="btn btn-primary addMeal">New Meal</button>
+				<button class="btn btn-default searchButton">Search</button>
 			</div>
 		</div>
 	</div>
@@ -15,6 +15,7 @@
 	<div class="row">
 		<div class="col-md-12 search">
 			{{ Form::open(['url' => '/search', 'role' => 'form','class' => 'searchForm']) }}
+			<p>Search by Date, Ingredients, Course, or Discomfort Level.</p>
 				<div class="form-group">
 					<label for="query">Search</label>
 					<input type="text" name="query" class="form-control" />
@@ -58,7 +59,7 @@
 				</select>
 			</div>
 			<div class="form-group">
-				<button type="submit" name="submit" class="btn btn-primary btn-block">Add Meal</button>
+				<button type="submit" name="submit" class="btn btn-primary btn-block btn-lg">Add Meal</button>
 			</div>
 			{{ Form::close() }}
 		</div>

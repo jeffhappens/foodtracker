@@ -8,18 +8,12 @@
 				'term' => $query,
 				'query' => Meal::where('ingredients','LIKE','%'.$query.'%')
 				->orWhere('title','LIKE','%'.$query.'%')
+				->orWhere('mealDate','LIKE','%'.$query.'%')
+				->orWhere('course','LIKE','%'.$query.'%')
+				->orWhere('discomfort','LIKE','%'.$query.'%')
+				->orderBy('mealDate','desc')
 				->get()
 			];
 			return View::Make('search.index', $data);
 		}
-
-		public function searchByDate($month,$day,$year) {
-			$data = [
-				'query' => Meal::where('mealDate',$month.'/'.$day.'/'.$year)->get()
-			];
-			return View::make('search.date', $data);
-
-		}
-
-
 	}

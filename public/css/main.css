@@ -97,12 +97,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body { font-family: 'Open Sans'; }
+
 header {
     background: #f8f8f8;
     padding: 20px;
     margin: 0 0 25px 0;
 }
-header h3 { margin: 0; }
+header h3 { margin: 0; font-family: 'Oswald'; font-weight: 300; }
+header h3 a { color: #6d6d6d; font-size: 30px; }
+header h3 a:hover { text-decoration: none; color: #2d2d2d; }
 
 form { display: none; }
 .btn { outline: none; }
@@ -138,6 +142,8 @@ select { -webkit-appearance: none; }
 .fade {
     opacity: .2;
 }
+
+.results h2 { font-family: 'Oswald'; font-weight: 400; }
 
 
 
