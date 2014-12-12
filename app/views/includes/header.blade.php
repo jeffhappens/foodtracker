@@ -11,3 +11,15 @@
 		</div>
 	</div>
 </header>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 search">
+			{{ Form::open(['url' => '/search', 'role' => 'form','class' => 'searchForm']) }}
+				<div class="form-group">
+					<label for="query">Search</label>
+					<input type="text" name="query" class="form-control" />
+				</div>
+			{{ Form::close() }}
+		</div>
+	</div>
+</div>
