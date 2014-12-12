@@ -8,6 +8,7 @@ $(function() {
 	
 	$('.searchButton').on('click', function() {
 		$('.searchForm').slideToggle('fast');
+		$('.searchForm input[name=query]').focus();
 	})
 
 	$('.datepicker').datepicker();
