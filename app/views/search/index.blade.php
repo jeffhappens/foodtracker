@@ -6,12 +6,24 @@
 		<div class="row">
 			<div class="col-md-12">
 				<h2>Search Results for "{{ $term }}"</h2>
-				@foreach($query as $que)
-					<h3>{{ $que->title }}</h3>
-					<p>{{ $que->ingredients }}</p>
-					<p>{{ $que->course }}</p>
-					<p>{{ $que->mealDate }}</p>
-				@endforeach
+				<table class="table" role="table">
+					<tr>
+						<th>Date</th>
+						<th>Title</th>
+						<th>Ingredients</th>
+						<th>Course</th>
+						<th>Discomfort</th>
+					</tr>
+					@foreach($query as $que)
+					<tr>
+						<td>{{ $que->mealDate }}</td>
+						<td>{{ $que->title }}</td>
+						<td>{{ $que->ingredients }}</td>
+						<td>{{ $que->course }}</td>
+						<td>{{ $que->discomfort }}</td>
+					</tr>
+					@endforeach
+				</table>
 			</div>
 		</div>
 	</div>

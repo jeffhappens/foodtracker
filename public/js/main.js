@@ -1,7 +1,9 @@
 $(function() {
 
 	$('.addMeal').on('click', function() {
-		$('form.add').slideToggle('fast');		
+		
+		$('form.add').slideToggle(250);
+			$('.mealTable').toggleClass('fade');
 	});
 	
 	$('.searchButton').on('click', function() {
@@ -9,5 +11,4 @@ $(function() {
 	})
 
 	$('.datepicker').datepicker();
-
 })

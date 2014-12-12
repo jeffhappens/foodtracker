@@ -135,6 +135,10 @@ select { -webkit-appearance: none; }
     margin-bottom: 20px;
 }
 
+.fade {
+    opacity: .2;
+}
+
 
 
 
