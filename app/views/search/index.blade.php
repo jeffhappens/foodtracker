@@ -6,7 +6,7 @@
 		<div class="row">
 			<div class="col-md-12 results">
 				<h2>Search Results for "{{ $term }}"</h2>
-				<table class="table mealTable" role="table">
+				<table class="table table-hover table-striped mealTable" role="table">
 					<tr>
 						<th>Date</th>
 						<th>Title</th>
