@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 results">
-				<table class="table table-hover table-striped mealTable" role="table">
+				<table class="table table-hover table-bordered table-striped table-responsive mealTable" role="table">
 					<tr>
 						<th>Date</th>
 						<th>Title</th>
