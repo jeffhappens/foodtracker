@@ -12,6 +12,7 @@
 				->orWhere('course','LIKE','%'.$query.'%')
 				->orWhere('discomfort','LIKE','%'.$query.'%')
 				->orderBy('mealDate','desc')
+				->orWhere('comments','LIKE','%'.$query.'%')
 				->get()
 			];
 			return View::Make('search.index', $data);

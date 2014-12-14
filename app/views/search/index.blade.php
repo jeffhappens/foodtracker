@@ -10,13 +10,14 @@
 				@if($query->isEmpty())
 					<p>No results found :(</p>
 				@else
-					<table class="table table-hover table-bordered table-striped mealTable" role="table">
+					<table class="table table-condensed table-hover table-bordered table-striped mealTable" role="table">
 						<tr>
 							<th>Date</th>
 							<th>Title</th>
 							<th>Ingredients</th>
 							<th>Course</th>
 							<th>Discomfort</th>
+							<th>Comments</th>
 						</tr>
 						@foreach($query as $que)
 						<tr>
@@ -25,6 +26,7 @@
 							<td>{{ $que->ingredients }}</td>
 							<td>{{ $que->course }}</td>
 							<td>{{ $que->discomfort }}</td>
+							<td>{{ $que->comments }}</td>							
 						</tr>
 						@endforeach
 					</table>	

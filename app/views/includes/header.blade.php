@@ -59,6 +59,11 @@
 				</select>
 			</div>
 			<div class="form-group">
+				<label for="comments">Comments</label>
+				<textarea name="comments" class="form-control"></textarea>
+			</div>
+
+			<div class="form-group">
 				<button type="submit" name="submit" class="btn btn-primary btn-block btn-lg">Add Meal</button>
 			</div>
 			{{ Form::close() }}

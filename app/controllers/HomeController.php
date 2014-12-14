@@ -29,6 +29,7 @@
 			$meal->course = $input['course'];
 			$meal->mealDate = $input['mealDate'];
 			$meal->discomfort = $input['discomfort'];
+			$meal->comments = $input['comments'];
 			$meal->save();
 			return Redirect::to('/');
 		}

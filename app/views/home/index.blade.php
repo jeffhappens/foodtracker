@@ -5,13 +5,14 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 results">
-				<table class="table table-hover table-bordered table-striped table-responsive mealTable" role="table">
+				<table class="table table-condensed table-hover table-bordered table-striped table-responsive mealTable" role="table">
 					<tr>
 						<th>Date</th>
 						<th>Title</th>
 						<th>Ingredients</th>
 						<th>Course</th>
 						<th>Discomfort</th>
+						<th>Comments</th>
 					</tr>
 					@foreach($meals as $meal)
 					<tr>
@@ -20,6 +21,7 @@
 						<td>{{ $meal->ingredients }}</td>
 						<td>{{ $meal->course }}</td>
 						<td>{{ $meal->discomfort }}</td>
+						<td>{{ $meal->comments }}</td>
 					</tr>
 					@endforeach
 				</table>
